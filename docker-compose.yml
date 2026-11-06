@@ -1,7 +1,7 @@
-# Файл docker-compose.yml
+name: taski
 volumes:
   pg_data:
-  # Новый volume — для статических файлов
+  
   static:
 
 services:
@@ -28,4 +28,4 @@ services:
     volumes:
       - static:/staticfiles
     ports:
-      - 8000:80 
+      - 8080:80 
